@@ -14,10 +14,33 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #   
-#   2018-10: Vadzz: PyNUT_Py3.py is a Python 3 abstraction class to access NUT server(s). 
+#   2008-01-14 David Goncalves
+#            PyNUT is an abstraction class to access NUT (Network UPS Tools) server.
+#
+#   2008-06-09 David Goncalves
+#            Added 'GetRWVars' and 'SetRWVar' commands.
+#
+#   2009-02-19 David Goncalves
+#            Changed class PyNUT to PyNUTClient
+#
+#   2010-07-23 David Goncalves - Version 1.2
+#            Changed GetRWVars function that fails is the UPS is not
+#            providing such vars.
+#
+#   2011-07-05 René Martín Rodríguez <rmrodri@ull.es> - Version 1.2.1
+#            Added support for FSD, HELP and VER commands
+#
+#   2012-02-07 René Martín Rodríguez <rmrodri@ull.es> - Version 1.2.2
+#            Added support for LIST CLIENTS command
+#
+#   2014-06-03 george2 - Version 1.3.0
+#            Added custom exception class, fixed minor bug, added Python 3 support.
+#
+#   2018-10: Vadzz - fork from version 1.3.0: PyNUT_Py3.py is a Python 3 abstraction class to access NUT server(s). 
 #   You can use it in Python 3 programs to access NUT's upsd data server in a simple way, 
 #   without having to know the NUT protocol. To import it on Python programs you have 
 #   to use the following (case sensitive) : 'import PyNUT_Py3'
+
 
 #   This module provides a 'PyNUTClient' class that can be used to connect and get data from an upsd data server.
 
